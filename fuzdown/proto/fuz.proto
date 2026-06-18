@@ -190,7 +190,10 @@ message MangaViewerResponse {
     bool isCommentEnabled = 4;
     Sns sns = 5;
     ScrollDirection scroll = 6;
+    UserPoint userPoint = 7;  // Added: field 7 for user points
     bool isFirstPageBlank = 8;
+    uint32 viewingPeriodDescription = 9;  // Added: field 9 for viewing period/type
+    uint32 adultOnly = 10;  // Added: field 10 for adult content flag
 }
 
 message SignInRequest {

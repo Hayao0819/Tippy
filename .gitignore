@@ -4,3 +4,12 @@ protoc.exe
 /*/*.jpeg
 /*/*.json
 /*/*.protobuf
+test_*/
+*.pdf
+.python-version
+.mypy_cache/
+.venv
+out
+*.jpeg
+*.json
+*.protobuf

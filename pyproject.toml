@@ -1,0 +1,22 @@
+[project]
+name = "comicfuz-down-plus"
+version = "2.0.0"
+description = "Downloader for Comic Fuz manga, books, and magazines"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "protobuf>=3.20.1",
+    "cryptography>=37.0.4",
+    "pillow>=10.0.0",
+    "requests>=2.31.0",
+]
+
+[project.scripts]
+fuz-down = "fuzdown.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["fuzdown", "fuzdown.proto"]
